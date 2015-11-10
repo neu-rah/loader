@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "docs": "README.md",
-    "install": "npm install simple-loader"
+    "install": ""
   },
   "keywords": [
     "load",

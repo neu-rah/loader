@@ -1,0 +1,41 @@
+{
+  "name": "loader",
+  "version": "0.0.0",
+  "description": "Load script with into context",
+  "main": "loader.js",
+  "scripts": {
+    "test": "",
+    "docs": "README.md",
+    "install": ""
+  },
+  "keywords": [
+    "load",
+    "loader",
+    "context",
+    "require",
+    "node"
+  ],
+  "author": {
+    "name": "Rui Azevedo",
+    "email": "ruihfazevedo@gmail.com"
+  },
+  "homepage": "https://github.com/neu-rah/loader/wiki",
+  "bugs": {
+    "url": "https://github.com/neu-rah/loader/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neu-rah/loader"
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "maintainers": [
+    {
+      "name": "Rui Azevedo",
+      "email": "ruihfazevedo@gmail.com"
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "name": "simple-loader",
   "version": "0.0.0",
-  "description": "Load script with into context",
-  "main": "loader.js",
+  "description": "Load script into context",
+  "main": "simple-loader.js",
   "scripts": {
     "test": "",
     "docs": "README.md",
-    "install": ""
+    "install": "npm install simple-loader"
   },
   "keywords": [
     "load",
@@ -28,10 +28,6 @@
     "url": "https://github.com/neu-rah/simple-loader"
   },
   "license": "MIT",
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
   "maintainers": [
     {
       "name": "Rui Azevedo",

@@ -1,6 +1,6 @@
 {
   "name": "simple-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Load script into context",
   "main": "simple-loader.js",
   "scripts": {
@@ -15,23 +15,22 @@
     "require",
     "node"
   ],
-  "author": {
-    "name": "Rui Azevedo",
-    "email": "ruihfazevedo@gmail.com"
-  },
+  "author": "Rui Azevedo <ruihfazevedo@gmail.com>",
   "homepage": "https://github.com/neu-rah/simple-loader/wiki",
   "bugs": {
     "url": "https://github.com/neu-rah/simple-loader/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/neu-rah/simple-loader"
+    "url": "git+https://github.com/neu-rah/simple-loader.git"
   },
   "license": "MIT",
   "maintainers": [
-    {
-      "name": "Rui Azevedo",
-      "email": "ruihfazevedo@gmail.com"
-    }
-  ]
+    "Rui Azevedo <ruihfazevedo@gmail.com>"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

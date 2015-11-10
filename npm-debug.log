@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/home/azevedo/code/nodes/simple-loader',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /home/azevedo/.npm/simple-loader/0.0.0/package.tgz not in flight; packing
+10 verbose tar pack [ '/home/azevedo/.npm/simple-loader/0.0.0/package.tgz',
+10 verbose tar pack   '/home/azevedo/code/nodes/simple-loader' ]
+11 verbose tarball /home/azevedo/.npm/simple-loader/0.0.0/package.tgz
+12 verbose folder /home/azevedo/code/nodes/simple-loader
+13 info prepublish simple-loader@0.0.0
+14 verbose addLocalTarball adding from inside cache /home/azevedo/.npm/simple-loader/0.0.0/package.tgz
+15 silly cache afterAdd simple-loader@0.0.0
+16 verbose afterAdd /home/azevedo/.npm/simple-loader/0.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/azevedo/.npm/simple-loader/0.0.0/package/package.json written
+18 silly publish { name: 'simple-loader',
+18 silly publish   version: '0.0.0',
+18 silly publish   description: 'Load script into context',
+18 silly publish   main: 'simple-loader.js',
+18 silly publish   scripts:
+18 silly publish    { test: '',
+18 silly publish      docs: 'README.md',
+18 silly publish      install: 'npm install simple-loader' },
+18 silly publish   keywords: [ 'load', 'loader', 'context', 'require', 'node' ],
+18 silly publish   author: { name: 'Rui Azevedo', email: 'ruihfazevedo@gmail.com' },
+18 silly publish   homepage: 'https://github.com/neu-rah/simple-loader/wiki',
+18 silly publish   bugs: { url: 'https://github.com/neu-rah/simple-loader/issues' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/neu-rah/simple-loader.git' },
+18 silly publish   license: 'MIT',
+18 silly publish   maintainers: [ { name: 'Rui Azevedo', email: 'ruihfazevedo@gmail.com' } ],
+18 silly publish   readme: 'Load javascript file into context\n\nRui Azevedo - Mar 2015\nruihfazevedo@gmail.com\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '15f2bbd3e790215d99ef0da711d110f13a7a944a',
+18 silly publish   _id: 'simple-loader@0.0.0',
+18 silly publish   _shasum: 'b6108ccf53ad1f1830b1fe46010034da704adf80',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name simple-loader
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/simple-loader
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/azevedo/.npm/simple-loader/0.0.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/simple-loader
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 14:08:46
+29 verbose request using bearer token for auth
+30 verbose request id 300389c7e4f09ae8
+31 http request PUT https://registry.npmjs.org/simple-loader
+32 http 403 https://registry.npmjs.org/simple-loader
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=60',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 10 Nov 2015 15:08:48 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lcy1122-LCY',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1447168126.543767,VS0,VE2070' }
+34 verbose request invalidating /home/azevedo/.npm/registry.npmjs.org/simple-loader on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.0." : simple-loader
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+36 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+36 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:354:22)
+36 verbose stack     at Request.emit (events.js:110:17)
+36 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+36 verbose stack     at Request.emit (events.js:129:20)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+36 verbose stack     at IncomingMessage.emit (events.js:129:20)
+36 verbose stack     at _stream_readable.js:908:16
+36 verbose stack     at process._tickCallback (node.js:355:11)
+37 verbose statusCode 403
+38 verbose pkgid simple-loader
+39 verbose cwd /home/azevedo/code/nodes/simple-loader
+40 error Linux 3.16.0-41-generic
+41 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+42 error node v0.12.7
+43 error npm  v2.11.3
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.0." : simple-loader
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

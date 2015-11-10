@@ -1,5 +1,5 @@
 {
-  "name": "loader",
+  "name": "simple-loader",
   "version": "0.0.0",
   "description": "Load script with into context",
   "main": "loader.js",
@@ -19,13 +19,13 @@
     "name": "Rui Azevedo",
     "email": "ruihfazevedo@gmail.com"
   },
-  "homepage": "https://github.com/neu-rah/loader/wiki",
+  "homepage": "https://github.com/neu-rah/simple-loader/wiki",
   "bugs": {
-    "url": "https://github.com/neu-rah/loader/issues"
+    "url": "https://github.com/neu-rah/simple-loader/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/neu-rah/loader"
+    "url": "https://github.com/neu-rah/simple-loader"
   },
   "license": "MIT",
   "dependencies": {

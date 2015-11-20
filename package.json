@@ -1,12 +1,10 @@
 {
   "name": "simple-loader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Load script into context",
   "main": "simple-loader.js",
   "scripts": {
-    "test": "",
-    "docs": "README.md",
-    "install": ""
+    "test": "mocha -R spec"
   },
   "keywords": [
     "load",

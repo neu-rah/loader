@@ -13,12 +13,10 @@ var fs=require("fs");
 var vm=require("vm");
 
 function loader(ctx) {
-  return function(file) {
-    (function(file) {
-      //vm.runInThisContext(fs.readFileSync(file, 'utf-8').toString(),{"filename":file});
-      vm.runInContext(fs.readFileSync(file, 'utf-8').toString(),ctx,{"filename":file});
-    }).call(ctx,file);
-  }
+  ctx=vm.isContext(ctx)?ctx:vm.createContext(ctx);
+  return (function(file) {
+    vm.runInContext(fs.readFileSync(file, 'utf-8').toString(),ctx,{"filename":file});
+  }).bind(ctx);
 }
 
 module.exports=loader;

@@ -1,6 +1,6 @@
 {
   "name": "simple-loader",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "include javascript file or load script into context",
   "main": "simple-loader.js",
   "scripts": {
@@ -32,6 +32,7 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {}
 }

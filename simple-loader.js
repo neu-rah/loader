@@ -14,6 +14,7 @@ var vm=require("vm");
 
 function loader(ctx) {
   ctx=vm.isContext(ctx)?ctx:vm.createContext(ctx);
+  ctx.global=global;
   return (function(file) {
     vm.runInContext(fs.readFileSync(file, 'utf-8').toString(),ctx,{"filename":file});
   }).bind(ctx);

@@ -1,6 +1,6 @@
 {
   "name": "simple-loader",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "include javascript file or load script into context",
   "main": "simple-loader.js",
   "scripts": {
